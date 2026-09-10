@@ -17,6 +17,7 @@
 
 **Example:**
 - **Windows:** `DLC=C:\Progress\OpenEdge`
+- **Linux:** `DLC=/usr/dlc`
 
 ### ABLUnit Runner Editor Context Menu
 ![Editor context](https://github.com/wayfarero/ablunitrunner/raw/main/resources/demo/editor.gif)
