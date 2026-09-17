@@ -19,6 +19,20 @@
 - **Windows:** `DLC=C:\Progress\OpenEdge`
 - **Linux:** `DLC=/usr/dlc`
 
+## Development container
+
+This repository includes a Dev Container configuration so that Node.js, project dependencies, and the `vsce` packaging CLI run inside Docker rather than on the host.
+
+1. Install Docker Desktop and the VS Code Dev Containers extension.
+2. Run **Dev Containers: Reopen in Container** from the Command Palette.
+3. Package the extension from the container terminal:
+
+  ```sh
+  vsce package --out build/ablunitrunner.vsix
+  ```
+
+The resulting VSIX is written to `build/`. OpenEdge is not included in the container, so running ABLUnit still requires an OpenEdge installation accessible to the container.
+
 ### ABLUnit Runner Editor Context Menu
 ![Editor context](https://github.com/wayfarero/ablunitrunner/raw/main/resources/demo/editor.gif)
 
